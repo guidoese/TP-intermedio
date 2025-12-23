@@ -1,0 +1,117 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+NZ+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-primario-50: rgb(255, 255, 255); /* header y cartas */
+  --color-primario-100: rgb(251, 251, 255); /* fondo */
+  --color-primario-200: rgb(240, 234, 252); /* fondo iconos cartas */
+  --color-primario-300: rgb(228, 215, 255); /* hoover */
+  --color-primario-400: rgb(208, 208, 208);
+  --color-primario-500: rgb(
+    101,
+    43,
+    223
+  ); /* Botones "entrar a nave", "concer mas" */
+  --color-primario-600: #e7eaed;
+  --color-primario-700: rgb(54, 12, 114); /* fondo "historias que vuelan" */
+  --color-primario-1000: rgb(43, 43, 43); /* negro letras */
+  --ff-text: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-text);
+  /* Utilizo la variable de color primario */
+  color: var(--color-primario-100);
+}
+
+/* Resetear los estilos de listas (los puntitos que se ven en cada item) */
+ul,
+ol {
+  list-style: none;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1500px;
+}
+
+.header {
+  background-color: var(--color-primario-50);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 82px;
+  padding: 0px, 32px;
+  border-bottom: 1px solid var(--color-primario-600);
+}
+
+.header .header__nav-list {
+  display: flex;
+  position: relative;
+  background-color: var(--color-primario-50);
+  padding: 0px;
+  flex-wrap: nowrap;
+  border-right: 2px solid red;
+}
+
+.header__nav-item {
+  text-decoration: none;
+  min-height: 41px;
+  padding: 6px 24px;
+  margin: 0px 4px;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Cuando estes encima del item */
+.header__nav-item:hover {
+  background-color: var(--color-primario-300);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.header__nav-item-a {
+  color: var(--color-primario-1000);
+  text-decoration: none;
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.btn-primary {
+  text-decoration: none;
+  background-color: var(--color-primario-500);
+  color: var(--color-primario-100);
+  /* min-height: 41px;
+  padding: 6px 24px;
+  margin: 0px 4px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50px; */
+}
+
+.btn-secondary {
+  background-color: var(--color-primario-100);
+  color: var(--color-primario-500);
+  border: 1px solid var(--color-primario-500);
+  text-decoration: none;
+  /* min-height: 41px;
+  padding: 6px 24px;
+  margin: 0px 4px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50px; */
+}
